@@ -1,0 +1,7 @@
+; LightImposition.def : Declares the module parameters for the DLL.
+
+LIBRARY      "LightImposition.api"
+
+EXPORTS
+    ; Explicit exports can go here
+	PlugInMain

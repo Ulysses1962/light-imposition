@@ -1,0 +1,294 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "IntelliPDF"
+            VALUE "FileDescription", "IntelliPDF Light Imposition"
+            VALUE "FileVersion", "1.0.0.2"
+            VALUE "InternalName", "LightImposition.dll"
+            VALUE "LegalCopyright", "(c) IntelliPDF.  All rights reserved."
+            VALUE "OriginalFilename", "LightImposition.dll"
+            VALUE "ProductName", "Light Imposition"
+            VALUE "ProductVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Ukrainian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_UKR)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\LightImposition.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#include "Preview/preview.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN_DLG DIALOGEX 0, 0, 533, 348
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IntelliPDF Light Imposition"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Run!",1,430,320,50,14
+    PUSHBUTTON      "Cancel",2,480,320,46,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_DISABLED | 0x1,7,320,421,14
+    LTEXT           "Processing...",IDC_STATIC,7,310,43,8
+    LTEXT           "0",IDC_STATIC,66,310,8,8
+    LTEXT           "% complete",IDC_STATIC,80,310,39,8
+    LTEXT           "ALFA Skew",IDC_STATIC,187,261,36,8
+    LTEXT           "BETA Skew",IDC_STATIC,187,276,36,8
+    EDITTEXT        IDC_Y_SCEW,269,274,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN11,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,274,11,14
+    GROUPBOX        "PDF generation parameters",IDC_STATIC,183,7,167,163
+    LTEXT           "Operation mode",IDC_STATIC,186,20,52,8
+    LTEXT           "Vertical tech allowence",IDC_STATIC,186,35,74,8
+    LTEXT           "Horizontal tech allowence",IDC_STATIC,186,51,82,8
+    LTEXT           "Middle tech allowence",IDC_STATIC,187,67,70,8
+    LTEXT           "Placeholders gap",IDC_STATIC,188,84,55,8
+    CONTROL         "Inverse printing",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,100,67,10
+    CONTROL         "Print cut-fold marks",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,113,78,10
+    CONTROL         "Print registration marks",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,126,90,10
+    CONTROL         "Print tint color bar",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,138,73,10
+    CONTROL         "Print progressive gray scale",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,203,150,105,10
+    COMBOBOX        IDC_OP_MODE2,273,19,75,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_Y_ALLOW2,273,33,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_X_ALLOW2,273,49,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M_ALLOW2,273,65,65,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLACE_GAP2,273,81,66,14,ES_AUTOHSCROLL
+    GROUPBOX        "Scaling and translations",IDC_STATIC,183,174,167,127
+    LTEXT           "X Translation",IDC_STATIC,187,186,42,8
+    LTEXT           "Y Translation",IDC_STATIC,187,201,42,8
+    LTEXT           "X Scale",IDC_STATIC,187,216,24,8
+    LTEXT           "Y Scale",IDC_STATIC,187,231,24,8
+    LTEXT           "Rotation angle",IDC_STATIC,187,246,48,8
+    EDITTEXT        IDC_X_TRANS2,269,184,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN22,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,184,11,14
+    EDITTEXT        IDC_Y_TRANS2,269,199,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN23,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,199,11,14
+    EDITTEXT        IDC_X_SCALE2,269,214,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN24,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,214,11,14
+    EDITTEXT        IDC_Y_SCALE2,269,229,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN25,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,229,11,14
+    EDITTEXT        IDC_ROT_ANGLE2,269,244,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN26,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,244,11,14
+    EDITTEXT        IDC_A_SCEW2,269,259,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN27,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNLEFT | UDS_ARROWKEYS,338,259,11,14
+    GROUPBOX        "Cut-Fold marks settings",IDC_STATIC,359,7,167,111
+    LTEXT           "H Lenth",IDC_STATIC,367,20,26,8
+    LTEXT           "V Lenth",IDC_STATIC,367,35,25,8
+    LTEXT           "V Inset",IDC_STATIC,367,65,24,8
+    LTEXT           "H Inset",IDC_STATIC,367,50,24,8
+    LTEXT           "H Page gap",IDC_STATIC,367,80,38,8
+    LTEXT           "V Page gap",IDC_STATIC,367,95,37,8
+    EDITTEXT        IDC_EDIT16,428,18,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,428,33,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,428,48,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT18,428,63,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,428,77,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,428,93,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,497,18,11,14
+    CONTROL         "",IDC_SPIN12,"msctls_updown32",UDS_ARROWKEYS,497,33,11,14
+    CONTROL         "",IDC_SPIN13,"msctls_updown32",UDS_ARROWKEYS,497,48,11,14
+    CONTROL         "",IDC_SPIN14,"msctls_updown32",UDS_ARROWKEYS,497,77,11,14
+    CONTROL         "",IDC_SPIN15,"msctls_updown32",UDS_ARROWKEYS,497,64,11,14
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,497,93,11,14
+    GROUPBOX        "Registration marks settings",IDC_STATIC,359,119,167,80
+    LTEXT           "Crosshair length",IDC_STATIC,366,133,53,8
+    LTEXT           "Inner circle D",IDC_STATIC,366,148,43,8
+    LTEXT           "Outer circle D",IDC_STATIC,366,163,44,8
+    EDITTEXT        IDC_EDIT12,429,131,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,499,131,11,14
+    EDITTEXT        IDC_EDIT13,430,146,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_ARROWKEYS,499,146,11,14
+    EDITTEXT        IDC_EDIT14,429,161,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN28,"msctls_updown32",UDS_ARROWKEYS,499,161,11,14
+    GROUPBOX        "Color bars settings",IDC_STATIC,359,200,167,101
+    LTEXT           "Page gap",IDC_STATIC,366,177,31,8
+    EDITTEXT        IDC_EDIT20,429,176,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN29,"msctls_updown32",UDS_ARROWKEYS,499,176,11,14
+    LTEXT           "Bar square size",IDC_STATIC,366,215,50,8
+    LTEXT           "Origin X",IDC_STATIC,366,231,26,8
+    LTEXT           "Origin Y",IDC_STATIC,366,245,26,8
+    EDITTEXT        IDC_EDIT21,429,213,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN30,"msctls_updown32",UDS_ARROWKEYS,499,213,11,14
+    EDITTEXT        IDC_EDIT22,429,229,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN31,"msctls_updown32",UDS_ARROWKEYS,499,229,11,14
+    EDITTEXT        IDC_EDIT23,429,244,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN32,"msctls_updown32",UDS_ARROWKEYS,499,244,11,14
+    LTEXT           "Page gap",IDC_STATIC,366,260,31,8
+    EDITTEXT        IDC_EDIT24,429,259,69,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN33,"msctls_updown32",UDS_ARROWKEYS,499,259,11,14
+    LTEXT           "Media height",IDC_STATIC,15,223,42,8
+    LTEXT           "Paper thickness",IDC_STATIC,15,240,51,8
+    EDITTEXT        IDC_P_THICKNESS,93,238,52,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PT_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,144,238,11,14
+    LTEXT           "Output file name",IDC_STATIC,7,285,54,8
+    EDITTEXT        IDC_F_NAME_EDIT,63,284,92,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_F_NAME,157,284,19,14
+    LTEXT           "Double sided printing",IDC_STATIC,14,140,68,8
+    LTEXT           "Pages per section",IDC_STATIC,14,156,58,8
+    EDITTEXT        IDC_PPSECTION2,92,153,52,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_PPS_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,144,153,11,14
+    GROUPBOX        "Output media settings",IDC_STATIC,7,190,167,71
+    LTEXT           "Media width",IDC_STATIC,15,207,39,8
+    EDITTEXT        IDC_P_WDTH3,93,204,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P_HEIGHT2,93,221,52,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_MW_SPIN3,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,144,204,11,14
+    CONTROL         "",IDC_MH_SPIN3,"msctls_updown32",UDS_ALIGNRIGHT | UDS_ARROWKEYS,144,221,11,14
+    LTEXT           "Imposition type",IDC_STATIC,14,50,50,8
+    COMBOBOX        IDC_IMP_TYPES3,92,49,72,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Binding type",IDC_STATIC,14,122,40,8
+    COMBOBOX        IDC_DS_PRINTING3,92,137,72,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BIND_TYPES4,92,121,72,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Imposition settings",IDC_STATIC,7,36,167,143
+    LTEXT           "Measuring units",IDC_STATIC,14,21,51,8
+    COMBOBOX        IDC_M_UNITS4,92,18,72,44,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Rows",IDC_STATIC,41,68,18,8
+    LTEXT           "Columns",IDC_STATIC,41,84,28,8
+    EDITTEXT        IDC_EDIT29,92,65,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT30,92,82,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Show Preview",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,268,61,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 341
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+#endif    // Ukrainian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\LightImposition.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

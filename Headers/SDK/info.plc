@@ -1,0 +1,62 @@
+/****************************************************************************
+info.plc
+ ___________________
+
+  Copyright 1994 - 2003 Adobe Systems Incorporated
+  All Rights Reserved.
+
+ NOTICE:  All information contained herein is, and remains
+ the property of Adobe Systems Incorporated and its suppliers,
+ if any.  The intellectual and technical concepts contained
+ herein are proprietary to Adobe Systems Incorporated and its
+ suppliers and may be covered by U.S. and Foreign Patents,
+ patents in process, and are protected by trade secret or copyright law.
+ Dissemination of this information or reproduction of this material
+ is strictly forbidden unless prior written permission is obtained
+ from Adobe Systems Incorporated.
+
+ ----------------------------------------------------------------------------
+
+  
+****************************************************************************/
+
+// Change this to your bundle identifier string
+#define kBundleIdentifier "com.adobe.acrobat.sdk."__OUTPUT_FILENAME__
+
+// Change this to your short version string
+#define kBundleShortVersion __OUTPUT_FILENAME__ " version 1.0"
+
+// Change this to the string to display in the Finder's Get Info window
+#define kBundleGetInfo kBundleShortVersion ", Copyright \U00A9 1994 - 2004 Adobe Systems Incorporated. All Rights Reserved."
+
+plist
+{
+	dictionary
+	{
+		key "CFBundleIdentifier" value string kBundleIdentifier
+		
+		key "CFBundleName" value string __OUTPUT_FILENAME__
+		key "CFBundleGetInfoString" value string kBundleGetInfo
+		key "CFBundleShortVersionString" value string kBundleShortVersion
+		
+		key "CFBundlePackageType" value string __OUTPUT_TYPE__
+		key "CFBundleSignature" value string __OUTPUT_CREATOR__
+		key "CFBundleExecutable" value string __OUTPUT_FILENAME__
+		key "CFBundleVersion" value string "1.0"
+		
+		key "CFBundleDevelopmentRegion" value string "en"
+		key "CFBundleInfoDictionaryVersion" value string "7.0"
+		key "LSPrefersCarbon" value boolean true
+		
+		key "MainEntryPoint" value string "main"
+	}
+}
+
+// Change this to be localized for English
+localize "en"
+{
+	comment "Localized versions of Info.plist keys"
+	key "CFBundleName" value string __OUTPUT_FILENAME__
+	key "CFBundleGetInfoString" value string kBundleGetInfo
+	key "CFBundleShortVersionString" value string kBundleShortVersion
+}

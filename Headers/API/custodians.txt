@@ -1,0 +1,16 @@
+# Note: Each address must have one of following two comments:
+#custodian : actual code custodian for area
+#observer : interested observer in this area of the depot.
+jmeehan #custodian
+rublee #custodian
+kyoshimu #custodian
+pmacleod #custodian
+ripotter #custodian
+drabin #custodian
+mdonohoe #custodian
+tkim #custodian
+jgreen #custodian
+dsawyer #custodian
+ashrivas #observer
+mhughes #observer
+llai #observer

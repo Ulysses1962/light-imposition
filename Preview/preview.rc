@@ -1,0 +1,163 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "preview_res.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "Preview/ipdf_preview.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM "Fit Width",                   ID_FIT_WIDTH
+        MENUITEM "Fit Height",                  ID_FIT_HEIGHT
+        MENUITEM "Fit &Window\tCtrl+W",         ID_FIT_WINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "50%",                         ID_ZOOM_50
+        MENUITEM "100%",                        ID_ZOOM_100
+        MENUITEM "200%",                        ID_ZOOM_200
+        MENUITEM "300%",                        ID_ZOOM_300
+        MENUITEM "400%",                        ID_ZOOM_400
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Stick To Main Dialog",        ID_STICK_TO_MAIN
+        MENUITEM "&Show grid\tCtrl+S",          ID_SHOW_GRID
+        MENUITEM SEPARATOR
+        MENUITEM "Options..",                   ID_PREV_OPTIONS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Cross-hair Tool",             ID_TOOL_NONE
+        MENUITEM SEPARATOR
+        MENUITEM "Zoom In Tool",                ID_TOOL_ZOOM_IN
+        MENUITEM "Zoom Out Tool",               ID_TOOL_ZOOM_OUT
+        MENUITEM "PAN Tool",                    ID_TOOL_PAN
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+IDD_PREVIEW_SETTINGS_DLG DIALOGEX 0, 0, 132, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IntelliPDF Preview Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,167,50,14
+    GROUPBOX        "Grid properties",IDC_STATIC,7,7,118,69
+    LTEXT           "Grid size",IDC_STATIC,13,20,28,8
+    LTEXT           "Grid type",IDC_STATIC,13,39,30,8
+    LTEXT           "Grid color",IDC_STATIC,13,57,31,8
+    CONTROL         "",IDC_GR_SIZE_SPIN,"msctls_updown32",UDS_ARROWKEYS,103,17,11,14
+    PUSHBUTTON      "...",IDC_CH_GRID_COLOR_BTN,94,55,22,14,BS_FLAT
+    EDITTEXT        IDC_GRID_SIZE_ED,54,18,50,14,ES_AUTOHSCROLL
+    CONTROL         "Lined",IDC_GRID_LINED,"Button",BS_AUTORADIOBUTTON,52,39,33,10
+    CONTROL         "Dotted",IDC_GRID_DOTTED,"Button",BS_AUTORADIOBUTTON,90,39,38,10
+    GROUPBOX        "Gidelines properties",IDC_STATIC,7,80,118,81
+    CONTROL         "",IDC_GRID_COLOR_INDICATOR,"Static",SS_BLACKFRAME,55,54,37,15
+    LTEXT           "Gide name",IDC_STATIC,14,95,34,8
+    COMBOBOX        IDC_GIDE_NAME,54,93,62,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Sensitivity",IDC_STATIC,13,116,34,8
+    EDITTEXT        IDC_GIDE_SENS,54,114,51,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_GIDE_SENS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ARROWKEYS,104,113,11,14
+    LTEXT           "Color",IDC_STATIC,15,137,18,8
+    CONTROL         "",IDC_GIDE_COLOR_INDICATOR,"Static",SS_BLACKFRAME,54,135,37,15
+    PUSHBUTTON      "...",IDC_CH_GIDE_COLOR_BTN,94,136,22,14,BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ZOOM_OUT            CURSOR                  "Preview/cursor4.cur"
+IDC_PAN                 CURSOR                  "Preview/cursor5.cur"
+IDC_ZOOM_IN             CURSOR                  "Preview/cursor6.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "Preview/Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SHOW_GRID
+    BUTTON      ID_SHOW_GIDELINES
+    BUTTON      ID_STICK_TO_MAIN
+    SEPARATOR
+    BUTTON      ID_FIT_HEIGHT
+    BUTTON      ID_TOOL_ZOOM_IN
+    BUTTON      ID_TOOL_ZOOM_OUT
+    BUTTON      ID_TOOL_PAN
+    BUTTON      ID_TOOL_NONE
+    SEPARATOR
+    BUTTON      ID_FIRST_PAGE
+    BUTTON      ID_PREV_PAGE
+    BUTTON      ID_NEXT_PAGE
+    BUTTON      ID_LAST_PAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "IntelliPDF Preview"
+    IDR_PREVIEW             "IntelliPDF Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FIT_HEIGHT           "\nFit page to window"
+    ID_SHOW_GRID            "\nShow or hide grid"
+    ID_TOOL_ZOOM_IN         "\nZoom in"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOL_ZOOM_OUT        "\nZoom out"
+    ID_TOOL_NONE            "\nCross-hair tool"
+    ID_TOOL_PAN             "\nPAN tool"
+    ID_STICK_TO_MAIN        "\nLock preview to main dialog"
+    ID_NEXT_PAGE            "\nNext page"
+    ID_PREV_PAGE            "\nPrevious page"
+    ID_FIRST_PAGE           "\nFirst page"
+    ID_LAST_PAGE            "\nLast page"
+    ID_SHOW_GIDELINES       "\nShow or hide gidelines"
+END
+
+
